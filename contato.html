@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head>
+        <title>Fale Conosco!</title>
+	    <meta charset="utf-8"/> 
+		<meta name="viewport" content="width=device-width, inicial-scale=1"> 
+		<meta name="description" content="Contato - Fale Conosco!">
+		<meta name="keywords" content="VOLEIBOL, voleibol, seleção, brasil">
+		<meta name="author" content="Maria Luiza de Mattos">
+		<link rel="icon"  type="image/jpg" href="imagens/voleibol.png"> 
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<script language="javascript" type="text/javascript">
+			function valida() { 
+			var nome = contato.nome.value;
+			var email = contato.email.value;
+			var nota = contato.nota.value;
+		
+			if (nome == "") {
+			   alert('Por favor, Preencha o campo com seu nome!');
+			   contato.nome.focus();
+			return false;
+			}
+
+			if (email == "") {
+			   alert('Preencha o campo com seu email');
+			   contato.email.focus();
+			return false;
+			}
+
+			if (nota == "") {
+				alert('Preencha o campo com a sua nota!');
+			   contato.nota.focus();
+			return false;
+			}
+			
+			alert("Dados enviados com sucesso!");
+			contato.reset(); 
+
+		}
+		</script> 
+	</head>
+	<body>
+       <div id="header">
+			 <ul id="nav">
+			    <li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="destaque.html">Destaque</a></li>
+				<li><a href="desafios.html">Desafios</a></li>
+                <li><a href="medalhas.html">Medalhas</a></li>
+                <li><a href="contato.html" class="ativa">Contato</a></li>
+			 </ul>
+	  </div>
+	  <div id="section_c">
+		<div class ="contato">
+		  <h1>Fale conosco!</h1>
+			   <form name="contato" action="#" method="get"><!--nome form para validar JS-->
+			   <table border="0">
+				   <tr><td> <label>Nome</td></tr>
+				   <tr><td><input type="text " name="nome" id="text1" size="50" placeholder="Preencha aqui o seu nome!" autofocus /></label></td> </tr>   
+				   <tr><td><label>E-mail</td></tr>
+				   <tr><td><input type="email" name="email" id="text2" size="50" placeholder="Preencha aqui o seu email!" autofocus /></label> </td></tr>
+				   <tr> <td> <label>Deixe uma nota! <select name="nota">
+					<option> 
+					<option> 0
+					<option> 1
+					<option> 2
+					<option> 3
+					<option> 4
+					<option> 5
+					<option> 6
+					<option> 7	
+					<option> 8
+					<option> 9
+					<option> 10
+					</select></td></tr>
+				   	<tr><td><textarea  id="textarea" name="textarea "   rows ="10" cols="52"   placeholder="Deixe aqui seu comentário."></textarea></td></label></tr>
+				 	<tr><td><input type="submit"  onclick="return valida()" value="Enviar"></td></tr>
+		  </table>
+		  </form>
+	  </div>
+	</div>
+	<div id="footer">
+		<p>Maria Mattos 2024 - &copy Todos os direitos reservados <br> Trabalho acadêmico sem fins lucrativos</p>
+	</div>
+	
+	</body>

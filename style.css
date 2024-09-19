@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    
+body{
+       background:#00000F;
+       font-family: rockwell;
+       margin-top: 5px;
+     }  
+
+     /*Inicio do cabeçalho */
+#header{
+    width: 900px;
+    height: 100px;
+    margin: 0px auto;
+    background:#C490F0 ;
+    }
+
+    #header h1{
+    display: block; /*bloqueia linha*/
+    float:left;
+    }
+
+#nav{ 
+    list-style:none; /*retira marcadores*/
+    padding-left: 0px;
+    display: block;
+    float: left;
+    margin-left: 25px;	
+    margin-top:40px;	  
+    }
+
+#nav li {
+    float:left;
+    margin-left: 60px;
+    }
+
+#nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 8px;
+	color:#000000;
+	font-weight: bold;
+	}
+
+#nav a:hover{
+	border-bottom: 5px solid #810ae2;
+	}
+		 
+ul#nav a.ativa{
+	border-bottom: 5px solid #810ae2;
+	}
+/*fim do cabeçalho */	  
+
+/* inicio area section */	 
+#conteudo{
+    width:900px;
+    height:400px;
+    background:#F8F8FF; 
+    margin:0px auto; 
+    }
+
+.img{
+	width:300px;
+	margin-left: 430px;
+    padding-top: 47px;
+	}
+        
+.artigo p{
+	font-size: 17px;
+	text-align:center;
+    padding-top: 47px;
+    margin-left: -20px;
+	}  
+
+/*  area rodapé */   
+#footer{
+    width: 900px;
+    height:75px;
+    background:#C490F0;
+    margin: 0px auto;
+    padding-top:20px;
+    }
+        
+#footer p{
+    font-size: 12px;
+    text-align: center;
+   }
+/* fim area rodape */
+
+/*Codificação da página sobre*/			 
+#conteudo{
+    width:900px;
+    height:400px;
+    background:#F8F8FF ;
+    margin:0px auto;
+    }
+
+.artigo{
+	width:350px;
+	margin:5px 8px;
+    margin-left: 60px;
+	float:left;
+	}
+        
+.artigo p{
+	padding-top:15px; 
+	font-size: 17px;
+	text-align:justify;
+	}
+/* FIM Codificação da página sobre*/	
+    
+/*Codificação da página destaque*/		
+#conteudo{
+    width:900px;
+    height:400px;
+    background:#F8F8FF; 
+    margin:0px auto; 
+    }
+
+.img2{
+	width:300px;
+	margin-left: 520px;
+    padding-top: 50px;
+	}
+        
+.artigo p{
+	font-size: 17px;
+	text-align:justify;
+    padding-top: 47px;
+	}  
+
+/*fim da página destaque*/
+
+/*Codificação da página desafios*/	
+	
+#conteudo{
+    width:900px;
+    height:400px;
+    background:#F8F8FF; 
+    margin:0px auto; 
+    }
+
+.img{
+	width:300px;
+	margin-left: 475px;
+    padding-top: 80px;
+	}
+        
+.artigo p{
+	font-size: 17px;
+	text-align:justify;
+    padding-top: 47px;
+	}  
+
+/*fim da página desafios*/
+
+/*Codificação da página medalhas*/	
+	
+#conteudo{
+    width:900px;
+    height:400px;
+    background:#F8F8FF; 
+    margin:0px auto; 
+    }
+
+.img3{
+	width:300px;
+	margin-left: 230px;
+    padding-top: 15px;
+	}
+
+/*fim da página medalhas*/
+
+/*Codificação da página contato*/			
+#section_c{
+    width:900px;
+    height:400px;
+    background:#F8F8FF;
+    margin:0px auto; 
+    }
+
+.contato{
+	width:900px;
+	height:400px;
+	margin:5px 250px;
+	float:center;
+	}
+
+.contato h1{
+    font-size:25px;
+    }
+        
+.contato textarea{
+    resize: none;
+    }
+
+.contato{
+    width:350px;
+    height:100px;
+    margin-left:15px auto;
+    float:left;
+    text-align:center;
+    }
+
+.contato h1{
+    margin-top: 50px;
+    margin-left:45px;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+.contato p{
+    font-size: 13px;
+    }
+
+/*RESPONSIVIDADE celulares	*/
+@media screen and (min-width:330px) and (max-width:480px){
+    body, div{}
+#footer { margin-left:0px;}
+}
+
+/*RESPOVIVIDADE Ipad  e ipad mini*/
+@media screen and (min-width:768px) and (max-width:1024px){/*ipad*/
+    body, div{}
+    #footer { margin-left:0px;}		
+}
